@@ -16,4 +16,4 @@ class Test(unittest.TestCase):
 
     def test_conteudo(self):
         # verifica o retorno do conteudo da pagina
-        self.assertEqual(self.result.data.decode('utf-8'), "Hello World - Thiago Valadão Coelho Aula 1 - Com Action")
+        self.assertEqual(self.result.data.decode('utf-8'), "Hello World - Thiago Valadão Coelho Aula 1 - Com Action + Heroku - https://devopslabthiago.herokuapp.com/")
