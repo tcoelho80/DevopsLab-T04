@@ -48,14 +48,14 @@ jobs:
                 password $HEROKU_API_KEY
             EOF
         env:
-            HEROKU_API_KEY: ${{ 906d9c40-7f1f-4540-afb5-f1dcdb1a359a }}
-            HEROKU_EMAIL: ${{ tcoelho80@gmail.com }}
+            HEROKU_API_KEY: ${{ "906d9c40-7f1f-4540-afb5-f1dcdb1a359a" }}
+            HEROKU_EMAIL: ${{ "tcoelho80@gmail.com" }}
 
       # Adicionando o Repositório Remoto do Heroku para poder enviar o código da app
       - name: Add Heroku Remote
         run: heroku git:remote --app $HEROKU_APP_NAME
         env:
-            HEROKU_APP_NAME: ${{ devopslabthiago }}
+            HEROKU_APP_NAME: ${{ "devopslabthiago" }}
 
       # Enviando o código da App para o Heroku fazer Deploy
       - name: Push to Heroku & Deploy
